@@ -1,0 +1,23 @@
+{
+  "name": "15.-severity-assessment-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "install": "^0.13.0",
+    "npm": "^9.6.7",
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1"
+  }
+}
