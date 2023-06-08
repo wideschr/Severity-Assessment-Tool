@@ -42,8 +42,8 @@ app.post('/post', upload.array('upload'), (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'Gmail', // e.g., 'Gmail'
     auth: {
-      user: 'wito.ds@gmail.com',
-      pass: 'sgwxfngajsubmfev',
+      user: '', //fill in email adress of gmail account where mail should be sent from
+      pass: '', //fill in app-password for the gmail account
     },
   });
 
