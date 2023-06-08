@@ -1,12 +1,16 @@
 'use strict'
 
-console.clear();
+import '../css/style.css';
+import csvData from '../severity_assessment.csv'
+
+import img_logo_VUB from "../img/logo_VUB.png";
+
+
+// console.clear();
 console.log("js successfully coupled")
 
-//navigatie
-    //  Header met navigatie verdwijnt bij naar beneden scrollen 
-    // en verschijnt weer na omhoog scrollen
-
+//NAVIGATION
+    //  Header met navigatie verdwijnt bij naar beneden scrollen en verschijnt weer na omhoog scrollen
     let beginP = window.scrollY
     let nav = document.getElementsByTagName('nav');
 
@@ -27,9 +31,12 @@ console.log("js successfully coupled")
     })
 
 
+
+
+//MAIN
 window.addEventListener('DOMContentLoaded', () => {
-    
-    fetch('../src/severity_assessment.csv')
+   
+    fetch(csvData)
     .then(response => response.text())
     .then(csvData => {
         //split lines of data, store in 'lines' and assign headers based on first line
@@ -811,7 +818,6 @@ function prependElement(value, elementType, container){
 }
 
 
-
 //function to clear the results container
 function clearResultsCont() {
     let modalHeader = document.getElementById("modalHeader")
@@ -834,3 +840,7 @@ function clearResultsCont() {
     <div class="comments" id="comments"></div>`
 
 }
+
+
+
+

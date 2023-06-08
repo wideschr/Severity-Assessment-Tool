@@ -9,20 +9,24 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/pdz0ssb.css">
 </head>
-<body>
+<body>  
         <!-- HEADER -->
         <header id="home">
             <!-- NAVIGATIE BAR -->
             <nav class="">
                 <div class="menu_container">
+                    <div class="logo_container">
+
+                    </div>
                     <a href="#home" class="logo_container">
                         <img class="logo" src="img/logo_VUB.png" alt="Logo van Vrije Universiteit brussel">
                     </a>
                     
                     <ul class="menu">
-                        <li><a class="menu_item" href="#severity_assessment">Severity Assessment Tool</a></li>
-                        <li><a class="menu_item" href="#references">references</a></li>
-                        <li><a class="menu_item" href="#contact">contact</a></li>
+                        <li><a class="menu_item active" href="index.html">Home</a></li>
+                        <li><a class="menu_item" href="SAT.html">Severity Assessment Tool</a></li>
+                        <li><a class="menu_item" href="references.html">references</a></li>
+                        <li><a class="menu_item" href="contact.html">contact</a></li>
                     </ul>
                 </div>
     
@@ -31,114 +35,20 @@
     
         <!-- MAIN -->
         <main>
-            <!-- severity assessment -->
+
+            <!-- HOME -->
             <div class="spacer_severity">
                 <div class="intro">
                     <h1>Severity Assessment Tool</h1>
                     <p class="intro_text">Welcome to the VUB Severity Assessment Tool. Here, you will find the most common procedures performed at the VUB, along with the prospective severity suggested by the ECD, AWB, and ANIM.
                         Please note that these are prospective scores and should be adjusted in the Retrospective Analysis based on the animal's welfare diary.</p>
                     <p id="severity_assessment"></p>
+                    <div class="ctas">
+                        <a href="SAT.html">Open Severity Assessment Tool</a>
+                    </div>
                 </div>
             </div>
-            <section class="severity_assessment" >
-                <h2>Severity Assessment Tool</h2>
-                <div class="severity_cont" id="severity-cont">
-                    <form method="post" >
 
-                        <div id="type-options" class="select-cont">
-                            <h3>Procedure Type</h3>
-                            <p class="results_instr">Specify the necessary details of the procedure and click the "get severity score" button</p>
-                            <select id="procedure-select">
-                              <!-- Options will be dynamically generated -->
-                            </select>
-                        </div>
-
-                        <div id="model-options" class="radio-cont">
-                          <!-- Radio buttons will be dynamically generated -->
-                        </div>
-                  
-                        
-                        <div id="subtype-options" class="radio-cont">
-                          <!-- Radio buttons will be dynamically generated -->
-                        </div>
-                  
-                        
-                        <div id="symptoms-options" class="radio-cont">
-                          <!-- Radio buttons will be dynamically generated -->
-                        </div>
-                  
-                        
-                        <div id="duration-options" class="radio-cont">
-                          <!-- Radio buttons will be dynamically generated -->
-                        </div>
-
-
-
-                        
-                        <!-- Buttons -->
-                        <div class="form_buttons" id="btnDiv">
-                           <!-- submit button is injected with js -->
-                            <input type="reset" value="clear" id="reset">
-                        </div>
-    
-        
-                    </form>
-                </div>
-
-
-                <!-- The Modal -->
-                <div id="myModal" class="modal hidden">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <div class="modal-header" id="modalHeader">
-                            <div class="severity-score" id="severity-score"></div>
-                            <span class="close">&times;</span>
-                        </div>
-
-                        <div class="modal-body" id="modalBody">
-                            <div class="selections" id="selections">
-                                <div id="type">
-                                </div>
-                                <div id="model">
-                                </div>
-                                <div id="subtype">
-                                </div>
-                                <div id="clinical-symptoms">
-                                </div>
-                                <div id="duration">
-                                </div>
-                            </div>                        
-    
-                            <div class="comments" id="comments"></div>
-                        </div>
-
-                        <div class="modal-footer" id="modalFooter">
-                            <p>Please note that the severity scores provided here are based on the limited information provided. Actual severity can vary depending on various factors that cannot be fully considered at this stage. Therefore, it is crucial to adjust the scoring during the Retrospective Analysis based on the comprehensive animal welfare diary.</p>
-                        </div>
-                        
-                      </div>
-                </div>
-
-
-
-            </section>
-
-
-            <!-- REFERENCES -->
-            <div class="spacer_references" id="references"></div>
-
-            <section class="references">
-                <h2>References</h2>
-            </section>
-
-
-            <!-- CONTACT -->
-            <div class="spacer_contact" id="contact"></div>
-
-            <section class="contact" >
-                <h2>Contact</h2>
-            </section>
             
         </main>
     
@@ -146,7 +56,7 @@
         <footer>
             <div>
                 <p>Copyright © 2023 Vrije Universiteit Brussel</p>
-                <p>Developed by Wito De Schrijver</p>
+                <p>TBD</p>
             </div>
         </footer>
     

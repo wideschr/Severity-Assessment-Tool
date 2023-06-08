@@ -21,7 +21,7 @@ img{
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 3rem;
     color: #EFEFEF;
     text-transform: uppercase;
 }
@@ -107,15 +107,20 @@ nav{
     text-decoration: none;
     font-weight: 600;
     color: #002677;
-    padding: 1rem 2rem 1rem 2rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem 2rem 0.5rem 2rem;
 
 }
 
 .menu_item:hover{
     transition-delay: 150ms;
-    border-radius: 1rem;
     color: #FF6600;
     
+}
+
+.active{
+    color: #FF6600;
+    border-bottom: 1px solid #FF6600;
 }
 
 /* MAIN */
@@ -129,7 +134,7 @@ main{
 section{
     width: 70%;
     min-height: 65vh;
-    margin: 3rem auto 7rem auto;
+    margin: 1.5rem auto 3rem auto;
 }
 
 .spacer_severity{
@@ -140,23 +145,62 @@ section{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .intro{
-    margin: 20rem 20rem 0 10rem;
+    margin: 10rem 20rem 0 0rem;
     width: 70%;
+    background: rgba(255, 255, 255, 0.2); /* Set the background color with transparency */
+    backdrop-filter: blur(10px); /* Apply a blur effect to create the frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    border-radius: 1.5rem; /* Add border radius for rounded corners */
+    padding: 4rem;
 }
 
 .intro_text{
     color: #EFEFEF;
-    font-size: 1.5rem;
-    padding: 5rem 0;
+    font-size: 1.2rem;
+    padding: 3rem 0;
     line-height: 150%;
 }
 
+.ctas{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.ctas a{
+    text-align: center;
+    width: 45%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #002677;
+    color: #EFEFEF;
+    padding: 1.5rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+
+.ctas a:hover, .ctas a:active{
+    background-color: #FF6600;
+    cursor: pointer;
+}
+
+
 
     /* SEVERITY ASSESSMENT */
+    .spacer_severity_page{
+        background-image: url(../img/background_mouse.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 60%;
+        height: 40vh;
+        display: flex;
+    }
+
     .severity_assessment{
         min-height: 100vh;
         width:50%;
@@ -247,18 +291,12 @@ section{
         position: relative;
     }
 
-    #getSeverity:hover{
+    #getSeverity:hover, #getSeverity:active{
         color: #EFEFEF;
         background-color: #FF6600;
         border: 3px solid #FF6600;
         cursor: pointer;
-    }
-
-    #getSeverity:active{
-        color: #EFEFEF;
-        background-color: #FF6600;
-        border: 3px solid #FF6600;
-        cursor: pointer;
+        transform: scale(105%);
     }
 
     #reset{
@@ -272,6 +310,7 @@ section{
         color: #EFEFEF;
         border: 2px solid #FF6600;
         cursor: pointer;
+        transform: scale(105%);
     }
 
     #reset:active{
@@ -279,6 +318,7 @@ section{
         background-color: #FF6600;
         border: 2px solid #FF6600;
         cursor: pointer;
+        transform: scale(105%);
     }
 
 
@@ -294,6 +334,7 @@ section{
         overflow: auto; /* Enable scroll if needed */
         background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
         padding: 6rem 10rem;
+        border-radius: 2rem;
     }
     
     /* Modal Content */
@@ -390,6 +431,52 @@ section{
     }
     
     
+
+
+/* CONTACT */
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    align-content: center;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 3rem;
+    border-radius: 2rem;
+    border-color: #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.19);
+}
+
+.contact-form input,.contact-form textarea,.contact-form button {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #c3c3c3;
+}
+
+.contact-form input:focus,.contact-form textarea:focus{
+    border: 1px solid #FF6600;
+    outline: none;
+}
+
+.contact-form input[type ='file']{
+    border: none;
+}
+
+.contact-form button{
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: #002677;
+    color: #FFFFFF;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+}
+
+.contact-form button:hover, .contact-form button:active{
+    background-color: #FF6600;
+    color: #FFFFFF;
+    transform: scale(105%);
+}
 
   
    
