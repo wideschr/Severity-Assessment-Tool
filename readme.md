@@ -7,4 +7,4 @@
 
 - To start the server, type this command: node server/server.js
 
-- open the index.html file in the /dist folder
+- Open your browser and go to http://127.0.0.1:3000/

@@ -5,7 +5,7 @@ const multer = require('multer');
 const path = require('path');
 
 const app = express();
-const port = 5500;
+const port = 3000;
 
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
