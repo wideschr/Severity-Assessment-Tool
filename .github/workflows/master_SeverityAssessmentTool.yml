@@ -46,7 +46,7 @@ jobs:
         with:
           name: node-app
 
-      - name: SeverityAssessmentTool_v01
+      - name: SeverityAssessmentTool
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
