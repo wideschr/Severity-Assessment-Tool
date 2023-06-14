@@ -5,7 +5,7 @@ const multer = require('multer');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = 5500;
 
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -42,8 +42,8 @@ app.post('/post', upload.array('upload'), (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'Gmail', // e.g., 'Gmail'
     auth: {
-      user: '', //fill in email adress of gmail account where mail should be sent from
-      pass: '', //fill in app-password for the gmail account
+      user: 'wito.ds@gmail.com',
+      pass: 'sgwxfngajsubmfev',
     },
   });
 

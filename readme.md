@@ -14,4 +14,4 @@
 
 5. Start the Express server, type this command: `node server/server.js`
 
-6. Open your browser and go to [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
+6. Open your browser and go to [http://127.0.0.1:5500/](http://127.0.0.1:5500/)
