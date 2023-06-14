@@ -194,6 +194,7 @@ section{
 .ctas a:hover, .ctas a:active{
     background-color: #FF6600;
     cursor: pointer;
+    transform: scale(105%);
 }
 
 
@@ -234,8 +235,11 @@ section{
         padding: 0.7rem 0;
     }
 
-    .instructions{
+    .results_instr{
         padding : 1rem 0;
+        text-align: center;
+        color: #002677;
+        font-size: 1.2rem;
     }
 
     .select-cont{
@@ -307,7 +311,7 @@ section{
         background-color: #FF6600;
         border: 3px solid #FF6600;
         cursor: pointer;
-        transform: scale(105%);
+        transform: scale(110%);
     }
 
     #reset{
@@ -317,19 +321,19 @@ section{
     }
 
     #reset:hover{
-        background-color: #002677;
-        color: #EFEFEF;
+        background-color: #FF6600;
         border: 2px solid #FF6600;
+        color: #EFEFEF;
         cursor: pointer;
-        transform: scale(105%);
+        transform: scale(110%);
     }
 
     #reset:active{
-        color: #EFEFEF;
         background-color: #FF6600;
         border: 2px solid #FF6600;
+        color: #EFEFEF;
         cursor: pointer;
-        transform: scale(105%);
+        transform: scale(110%);
     }
 
 
@@ -456,6 +460,55 @@ section{
         height: 25vh;
     }
 
+    .card-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-link{
+        text-decoration: none;
+        color: black;
+    }
+
+    .card{
+        padding: 1rem 1rem;;
+        margin: 1rem;
+        max-width: 30%;
+        border-radius: 1rem;;
+    }
+
+    .card:hover, .card:active{
+        border: 1px solid #FF6600;
+        transform: scale(105%);
+    }
+
+    .card-img-top{
+        display: block;
+        max-width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card-text:last-child {
+        margin: 1rem 0;
+    }
+
+    .btn-primary{
+        background-color: #002677;
+        border-color: #002677;
+    }
+
+    .btn-primary:hover,.btn-primary:active {
+        background-color: #FF6600;
+        border-color: #FF6600;
+    }
 
 
 /* CONTACT */
@@ -511,7 +564,7 @@ section{
     .contact-form button:hover, .contact-form button:active{
         background-color: #FF6600;
         color: #FFFFFF;
-        transform: scale(105%);
+        transform: scale(110%);
     }
 
 

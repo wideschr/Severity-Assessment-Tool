@@ -5,6 +5,7 @@ import csvData from '../severity_assessment.csv'
 
 import img_logo_VUB from "../img/logo_onderzoek.jpg";
 import icon_logo_VUB from "../img/vub_sponsor_logo_digitaal.jpg";
+import logo_norecopa from "../img/references/logo_norecopa.jpg";
 
 
 // console.clear();
