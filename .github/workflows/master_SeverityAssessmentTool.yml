@@ -59,4 +59,4 @@ jobs:
           slot-name: 'production'
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_0e9f8012eb5f4a1e9c800fa2f9ad41a2 }}
           package: .
-          appService.deploySubpath: 'src'  # Set the subpath to 'app'
+          appService.deploySubpath: 'dist'  # Set the subpath to 'app'
